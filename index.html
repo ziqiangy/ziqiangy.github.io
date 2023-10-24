@@ -84,15 +84,19 @@
 /* multi tabs plugin */
 
 .box-nav{
+    
     height:50px;
     display:flex;
+    flex-wrap:wrap;
 }
 
 .box-nav-item{
+    cursor:pointer;
     margin:auto 0;
     /* font-size:1.2em; */
     padding:3px 10px;
     border-bottom:2px solid black;
+    
 }
 
 .active-nav{
@@ -100,6 +104,8 @@
     border-right:2px solid black;
     border-top:2px solid black;
     border-bottom:none;
+    background-color:black;
+    color:white;
 }
 .box-footer{
     height:50px;
@@ -116,6 +122,7 @@
     /* border-top:3px solid black; */
     /* border-bottom:3px solid black; */
     height:300px;
+    
 }
 
 .box-content-item{
@@ -261,31 +268,46 @@
                     <div class="box-nav-item">PeterYuanApp</div>
                 </div>
     
-                <div id="box-contents" class="box-content">
+                <div id="box-contents" class="box-content" style="overflow-y:scroll;">
                     <div class="box-content-item active-content">
-                        Developed PHP web app on Microsoft Azure for support team to access Customer-Support database
-Applied Laravel MVC framework to develop CRUD APIs in backend; Applied authentication, CSRF protection, authorizing roles, password reset to protect website from hackers or SQL injection
-Created interactive, user friendly front-end pages applying JavaScript, jQuery, ajax and DataTables; Created reports, search, admin, dynamic CRUD, login system and protect URLs with authorization
-Manipulated database by applying DDL, DML, backup/restore, aggregation, view on SSMS
-    
+                        <ul>
+                            <li>Developed PHP web app on Microsoft Azure for support team to access Customer-Support database</li>
+                            <li>Applied Laravel MVC framework to develop CRUD APIs in backend; Applied authentication, CSRF protection, authorizing roles, password reset to protect website from hackers or SQL injection</li>
+                            <li>Created interactive, user friendly front-end pages applying JavaScript, jQuery, ajax and DataTables; Created reports, search, admin, dynamic CRUD, login system and protect URLs with authorization</li>
+                            <li>Manipulated database by applying DDL, DML, backup/restore, aggregation, view on SSMS</li>
+                        </ul>
+                        <!-- <div style="display:flex;justify-content: center;">
+                            <img src="./pictures/yjfw/banners/mobile-1.jpg" alt="mobile-1">
+                        </div> -->
+                        
+                    
                     </div>
                     <div class="box-content-item">
-                        Upgraded project management interface to be more responsive, interactive for tablet, phone users.
-                        Implemented CSS and Bootstrap to clean up styles in Navbar, Sidebar, Tables, icons, Buttons and forms
-                        Implementing JavaScript Async and ReactJS in depth for more interactive and user-friendly report page
-                        Implementing RESTful APIs in PHP, testing by Postman, jQuery rendering to web page
-                        Applying MVC to improve code quality, PHP code cleaning by encapsulating functions and parameters
-                        Applying single-page application (SPA) in report page by using React and CSS in depth    
+                        <ul>
+                            <li>Upgraded project management interface to be more responsive, interactive for tablet, phone users.</li>
+                            <li>Implemented CSS and Bootstrap to clean up styles in Navbar, Sidebar, Tables, icons, Buttons and forms</li>
+                            <li>Implementing JavaScript Async and ReactJS in depth for more interactive and user-friendly report page</li>
+                            <li>Implementing RESTful APIs in PHP, testing by Postman, jQuery rendering to web page</li>
+                            <li>Applying MVC to improve code quality, PHP code cleaning by encapsulating functions and parameters</li>
+                            <li>Applying single-page application (SPA) in report page by using React and CSS in depth</li>
+                        </ul>
+                                
                     </div>
                     <div class="box-content-item">
-                        Maintaining, developing retail site on WooCommerce, WordPress
-Implementing ERP: Data migration, applying data extract, transform and load manually and automatically.
-                    </div>
-                    <div class="box-content-item">
-                        Peteryuanapp includes blog, admin, weather, notes and memorizing vocabularies information system
-Hosting on Linode, applied full stack using Apache, ReactJS, NodeJS, Webpack, PHP, MySQL, SQLite, Python, Django, BeautifulSoup and Linux command operation. Applied SPA, Separating Back/Front End, bounding technologies
-Applied SPA CRUD and RESTful API in ReactJS, PHP, applied MTV framework in Django
+                        <ul>
+                            <li>Maintaining, developing retail site on WooCommerce, WordPress</li>
+                            <li>Implementing ERP: Data migration, applying data extract, transform and load manually and automatically.</li>
+                        </ul>
+                        
 
+                    </div>
+                    <div class="box-content-item">
+                        <ul>
+                            <li>Peteryuanapp includes blog, admin, weather, notes and memorizing vocabularies information system</li>
+                            <li>Hosting on Linode, applied full stack using Apache, ReactJS, NodeJS, Webpack, PHP, MySQL, SQLite, Python, Django, BeautifulSoup and Linux command operation. Applied SPA, Separating Back/Front End, bounding technologies</li>
+                            <li>Applied SPA CRUD and RESTful API in ReactJS, PHP, applied MTV framework in Django</li>
+                        </ul>
+                        
                     </div>
                 </div>
                 <!-- <div class="box-footer"></div> -->
