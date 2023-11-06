@@ -10,7 +10,7 @@
 
 <style>
 
-    /* 整体结构 */
+    /* outline */
 .flex-container{
     display:flex;
     flex-direction:column;
@@ -108,7 +108,7 @@
     border-right:2px solid black;
     border-top:2px solid black;
     border-bottom:none;
-    background-color:black;
+    /* background-color:black; */
     color:white;
 }
 .box-footer{
@@ -199,35 +199,6 @@
             background-color: black;
         }
 
-
-/* wordlist plugin */
-.wordlist-header{
-    height:30px;
-    border-bottom:1px solid gray;
-    display:flex;
-    justify-content:space-around;
-}
-
-.wordlist-word-board{
-    height:280px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-
-}
-
-
-.wordlist-footer{
-    height:30px;
-    border-top:1px solid gray;
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-}
-
-
-
 </style>
 <body>
     <div class="flex-container">
@@ -281,9 +252,13 @@
                             <li>Created interactive, user friendly front-end pages applying JavaScript, jQuery, ajax and DataTables; Created reports, search, admin, dynamic CRUD, login system and protect URLs with authorization</li>
                             <li>Manipulated database by applying DDL, DML, backup/restore, aggregation, view on SSMS</li>
                         </ul>
-                        <!-- <div style="display:flex;justify-content: center;">
-                            <img src="./pictures/yjfw/banners/mobile-1.jpg" alt="mobile-1">
-                        </div> -->
+                        <ul>
+                            <li>Developed PHP web app on Microsoft Azure for support team to access Customer-Support database</li>
+                            <li>Applied Laravel MVC framework to develop CRUD APIs in backend; Applied authentication, CSRF protection, authorizing roles, password reset to protect website from hackers or SQL injection</li>
+                            <li>Created interactive, user friendly front-end pages applying JavaScript, jQuery, ajax and DataTables; Created reports, search, admin, dynamic CRUD, login system and protect URLs with authorization</li>
+                            <li>Manipulated database by applying DDL, DML, backup/restore, aggregation, view on SSMS</li>
+                        </ul>
+                        
                         
                     
                     </div>
@@ -357,89 +332,6 @@
 
 
 
-        <!-- <div class="box">
-            <div class="frame">
-                <div class="box-header">
-                    <div style="display:flex;align-items:center;justify-content:center;height:50px;">
-                        <div style="font-size:2em;font-weight:600;">Flashcards</div>
-                    </div>
-                </div>
-                
-    
-                <div id="box-contents" class="box-content">
-                    <div id="wordlist-display">
-                        <div class="wordlist-header">
-                            <img id="prev-word" style="height:30px;" src="./pictures/yjfw/words/arrow-circle-left-solid.svg" alt="">
-                            <img id="show-hide-trans" style="height:30px;" src="./pictures/yjfw/words/eye-regular.svg" alt="">
-                            <img id="next-word" style="height:30px;" src="./pictures/yjfw/words/arrow-circle-right-solid.svg" alt="">
-                            
-                        </div>
-
-                        <div class="wordlist-word-board">
-                            <div id="display-word-title" style="font-size:30px;font-weight:600;"></div>
-                            <div id="display-word-trans" style="font-size:18px;padding:20px;font-weight:600;"></div>
-                            <div id="display-word-sentence" style="font-size:16px;padding:0 20px;"></div>
-                            
-                        </div>
-                    </div>
-
-                    <div id="wordlist-addnew" style="display:none;height:310px;">
-                        <form action="" id="new-word-form">
-                            <label for="new-title">Word Title</label><br>
-                            <input type="text" id="new-title" name="title"><br>
-                            <label for="new-class">Part of Speech</label><br>
-                            <select type="radio" id="new-class" name="class">
-                                <option value="n">noun</option>
-                                <option value="v">verb</option>
-                                <option value="adj">adjective</option>
-                                <option value="adv">adverb</option>
-                                
-                            </select><br>
-                            <label for="new-translate">Translate</label><br>
-                            <textarea name="translate" id="new-translate" cols="30" rows="3"></textarea><br>
-                            <label for="new-sentence">Sentence</label><br>
-                            <textarea name="sentence" id="new-sentence" cols="30" rows="5"></textarea><br>
-                            <input type="submit" id="new-word-submit" value="submit">
-                        </form>
-                    </div>
-                    <div id="wordlist-update" style="display:none;height:310px;">
-                        <form action="" id="update-word-form">
-                            <label for="update-title">Word Title</label><br>
-                            <input type="text" id="update-title" name="title"><br>
-                            <label for="update-class">Part of Speech</label><br>
-                            <select type="radio" id="update-class" name="class">
-                                <option value="n">noun</option>
-                                <option value="v">verb</option>
-                                <option value="adj">adjective</option>
-                                <option value="adv">adverb</option>
-                                
-                            </select><br>
-                            <label for="update-translate">Translate</label><br>
-                            <textarea name="translate" id="update-translate" cols="30" rows="3"></textarea><br>
-                            <label for="update-sentence">Sentence</label><br>
-                            <textarea name="sentence" id="update-sentence" cols="30" rows="5"></textarea><br>
-                            <input type="submit" id="update-word-submit" value="update">
-                        </form>
-                    </div>
-                    <div id="wordlist-list" style="display:none;height:310px;">
-                        
-                    </div>
-                    <div class="wordlist-footer">
-                        <img id="add-word" style="height:30px;" src="./pictures/yjfw/words/plus-circle-solid.svg" alt="">
-                        <img id="remove-word" style="height:30px;" src="./pictures/yjfw/words/minus-circle-solid.svg" alt="">
-                        <img id="edit-word" style="height:30px;" src="./pictures/yjfw/words/edit-solid.svg" alt="">
-                        <img id="list-wordlist" style="height:30px;" src="./pictures/yjfw/words/list-alt-regular.svg" alt="">
-                        <div id="display-wordlist-index" style="height:30px; font-size:25px;" class="wordlist-index-item">1</div>
-                    </div>
-                </div>            
-            </div>
-        </div>
-
-        <div class="dots">
-            <img style="height:30px;" src="./pictures/yjfw/layout/ellipsis-vertical-solid.svg">
-        </div> -->
-
-
         <div class="page-footer">
             <div class="footer-frame">
                 <div>PeterYuan@2023</div>
@@ -457,7 +349,7 @@
 
 
     <script>
-        //tab设计
+        //tab design
         let navObjs = document.getElementById("box-navs");
         let contentObjs = document.getElementById("box-contents");
 
@@ -518,162 +410,7 @@
         })
     </script>
 
-    <script>
-        //wordlist
-
-    let wordListObj = {
-        vocab:[
-            {
-                // id:1,
-                title:'equivocal',
-                class:'adj',
-                translate:'not easily understood or explained',
-                sentence:'Politicians have been known to provide equivocal answers to reporters’ questions.'
-            },
-            {
-                // id:2,
-                title:'enigma',
-                class:'n',
-                translate:'a person or thing that is mysterious, puzzling, or difficult to understand',
-                sentence:'Scientists continue to research cancer to solve the enigma of its primary cause, which will hopefully lead to a cure.'
-            },
-            {
-                // id:3,
-                title:'lethargic',
-                class:'adj',
-                translate:'lacking energy',
-                sentence:'It’s not uncommon to feel lethargic for weeks or even months after major surgery.'
-            }
-        ]
-    }
-
     
-    let prevBtn = document.getElementById("prev-word");
-    let nextBtn = document.getElementById('next-word');
-    let showHideWord = document.getElementById('show-hide-trans');
-    let displayWordTitle = document.getElementById('display-word-title');
-    let displayWordTrans = document.getElementById('display-word-trans');
-    let displayWordSentence = document.getElementById('display-word-sentence');
-    let displayWordlistIndex = document.getElementById('display-wordlist-index');
-
-    //initial value display
-
-    let wordPointer = 0;
-
-    displayWordTitle.innerHTML = wordListObj.vocab[wordPointer].title;
-    displayWordTrans.innerHTML = wordListObj.vocab[wordPointer].translate;
-    displayWordSentence.innerHTML = wordListObj.vocab[wordPointer].sentence;
-    displayWordlistIndex.innerHTML = wordPointer+1;
-
-    
-    nextBtn.onclick = ()=>{
-        wordPointer>=wordListObj.vocab.length-1 ? wordPointer = wordPointer%(wordListObj.vocab.length-1):wordPointer++;
-        // console.log(wordPointer);
-        displayWordTitle.innerHTML = wordListObj.vocab[wordPointer].title;
-        displayWordTrans.innerHTML = wordListObj.vocab[wordPointer].translate;
-        displayWordSentence.innerHTML = wordListObj.vocab[wordPointer].sentence;
-        displayWordlistIndex.innerHTML = wordPointer+1;
-    }
-    prevBtn.onclick = ()=>{
-        wordPointer<=0 ? wordPointer=wordPointer+wordListObj.vocab.length-1 : wordPointer--;
-        // console.log(wordPointer);
-        displayWordTitle.innerHTML = wordListObj.vocab[wordPointer].title;
-        displayWordTrans.innerHTML = wordListObj.vocab[wordPointer].translate;
-        displayWordSentence.innerHTML = wordListObj.vocab[wordPointer].sentence;
-        displayWordlistIndex.innerHTML = wordPointer+1;
-    }
-
-    const hostName = 'http://127.0.0.1:5501';
-    // const hostName = 'https://dev.yjfw.art';
-    showHideWord.onclick = () => {        
-        if(showHideWord.src==`${hostName}/imgs/words/eye-regular.svg`){
-            showHideWord.src = `${hostName}/imgs/words/eye-slash-regular.svg`;
-            displayWordTrans.style.display='none';
-        }else{
-            showHideWord.src=`${hostName}/imgs/words/eye-regular.svg`;
-            displayWordTrans.style.display='block';
-        }
-        // showHideWord.src == `${hostName}/imgs/words/eye-regular.svg` ? showHideWord.src = `${hostName}/imgs/words/eye-slash-regular.svg`: showHideWord.src=`${hostName}/imgs/words/eye-regular.svg`;
-    }
-
-    //add and remove words
-
-    let addWord = document.getElementById('add-word');
-    let removeWord = document.getElementById('remove-word');
-    let listWord = document.getElementById('display-word-list');
-
-    addWord.onclick = () => {
-
-        document.getElementById('wordlist-display').style.display="none";
-        document.getElementById('wordlist-addnew').style.display="block";
-
-        // console.log(wordListObj.vocab);
-    }
-
-    removeWord.onclick = () => {
-        wordListObj.vocab.splice(wordPointer,1);
-        prevBtn.onclick();
-        console.log(wordListObj.vocab);
-    }
-
-
-    //insert new word
-    let btn = document.querySelector("#new-word-submit");
-    let form = document.querySelector("#new-word-form");
-    btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const formData = new FormData(form);
-        const values = [...formData.entries()];
-        let word = values.reduce((prev,curr)=>(prev.push({[curr[0]]:curr[1]}),prev),[]);
-        word = word.reduce((prev,curr)=>{return {...prev,...curr}});
-        wordListObj.vocab.splice(wordPointer+1,0,word);
-        nextBtn.onclick();
-        // console.log(wordListObj.vocab);
-
-        document.getElementById('wordlist-display').style.display="block";
-        document.getElementById('wordlist-addnew').style.display="none";
-    })
-
-
-    //update word 
-    document.getElementById('edit-word').onclick = () => {
-        document.getElementById('wordlist-display').style.display="none";
-        document.getElementById('wordlist-update').style.display="block";
-        let toUpdateWord = wordListObj.vocab[wordPointer];
-        document.getElementById('update-title').value = toUpdateWord['title'];
-        document.getElementById('update-translate').innerText = toUpdateWord['translate'];
-        document.getElementById('update-sentence').innerText = toUpdateWord['sentence'];
-
-        let wordClassOptions = document.getElementById('update-class').children;
-        Array.from(wordClassOptions).forEach((v,i,a)=>{
-            if(v.value==toUpdateWord['class']){
-                v.selected='selected';
-            }
-        })
-    }
-
-    document.querySelector("#update-word-submit").addEventListener('click',(e)=>{
-        e.preventDefault();
-        const formData = new FormData(document.querySelector("#update-word-form"));
-        const values = [...formData.entries()];
-        // console.log(values);
-        let word = values.reduce((prev,curr)=>(prev.push({[curr[0]]:curr[1]}),prev),[]);
-        word = word.reduce((prev,curr)=>{return {...prev,...curr}});
-        wordListObj.vocab.splice(wordPointer,1,word);
-        document.getElementById('wordlist-display').style.display="block";
-        document.getElementById('wordlist-update').style.display="none";
-
-        //重新display时候要再次刷新所有值
-        displayWordTitle.innerHTML = wordListObj.vocab[wordPointer].title;
-        displayWordTrans.innerHTML = wordListObj.vocab[wordPointer].translate;
-        displayWordSentence.innerHTML = wordListObj.vocab[wordPointer].sentence;
-        displayWordlistIndex.innerHTML = wordPointer+1;
-
-    })
-
-    //list wordlist
-
-    </script>
 
 </body>
 </html>
