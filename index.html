@@ -87,7 +87,11 @@
     
     height:50px;
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
+    white-space:nowrap;
+    /* overflow:hidden; */
+    text-overflow:clip;
+
 }
 
 .box-nav-item{
@@ -256,16 +260,19 @@
                         <div style="font-size:2em;font-weight:600;">My Works</div>
                     </div>
                 </div>
-                <div id="box-navs" class="box-nav">
-                    <div class="box-nav-item active-nav">Trusted Network Solutions</div>
-                
-                    <div class="box-nav-item">Workglue</div>
+                <div style="overflow-x:scroll;">
+                    <div id="box-navs" class="box-nav">
+                        <div class="box-nav-item active-nav">Trusted Network Solutions</div>
                     
-                    <div class="box-nav-item">Natures Fusions Essential Oil</div>
-                    
-                    <div class="box-nav-item">PeterYuanApp</div>
+                        <div class="box-nav-item">Workglue</div>
+                        
+                        <div class="box-nav-item">Natures Fusions Essential Oil</div>
+                        
+                        <div class="box-nav-item">PeterYuanApp</div>
+                    </div>
+        
                 </div>
-    
+                    
                 <div id="box-contents" class="box-content" style="overflow-y:scroll;">
                     <div class="box-content-item active-content">
                         <ul>
